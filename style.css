@@ -1,0 +1,104 @@
+body {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  align-items: center;
+  justify-items: center;
+  padding: 0px;
+  margin: 0px;
+  height: 100vh;
+  background: hsl(218, 23%, 16%);
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
+}
+
+.container {
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  align-items: center;
+  background: hsl(217, 19%, 24%);
+  width: 85%;
+  max-width: 500px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.advice_ID {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-top: 20px;
+  font-size: 0.675em;
+  color: hsl(150, 100%, 66%);
+}
+
+.advice_content {
+  font-size: 1.5em;
+  text-align: center;
+  color: hsl(193, 38%, 86%);
+  padding: 10px;
+  max-width: 450px;
+  transition: opacity 0.3s ease;
+}
+
+.pattern {
+  margin-bottom: 60px;
+}
+
+.dice {
+  display: inline-block;
+  position: absolute;
+  bottom: -35px;
+  width: 70px;
+  height: 70px;
+  margin-top: 20px;
+  text-align: center;
+  background-color: hsl(150, 100%, 66%);
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.dice:hover {
+  background: hsl(150, 85%, 51%);
+  animation: rotate .7s ease;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.dice img {
+  padding: 22px;
+}
+
+.attribution {
+  padding: 20px;
+  font-size: 1rem;
+  color: white;
+  height: 20px;
+  width: 90%;
+  grid-row-end: span 1;
+}
+
+
+
+
+
+/*## Colors
+
+### Primary
+
+- Light Cyan: hsl(193, 38%, 86%)
+- Neon Green: hsl(150, 100%, 66%)
+
+### Neutral
+
+- Grayish Blue: hsl(217, 19%, 38%)
+- Dark Grayish Blue: hsl(217, 19%, 24%)
+- Dark Blue: hsl(218, 23%, 16%)*/
