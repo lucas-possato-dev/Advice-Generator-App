@@ -17,5 +17,7 @@ async function handleClick() {
   }, 300);  
 }
 
+handleClick();
+
 
 button.addEventListener('click', handleClick);
